@@ -5,3 +5,8 @@ string values: cat dog bat fish turtle
 """
 
 animals = "cat","dog","bat","fish","turtle"
+Animals =[]
+x = len(animals)
+for i in range(x):
+    Animals.append(animals[i])
+print(Animals)

@@ -18,3 +18,16 @@ invitations to send.
 This program will require you to incorporate everything we
 have learned so far.
 """
+peopleList = []
+name = "sophie"
+while name != '':
+    name  =  input("Enter the first and last name of the person you wish to add=> ")
+    if name in peopleList:
+        print("This person is already in the invited list.")
+    elif name not in peopleList:
+        peopleList.append(name)
+else:
+    peopleList.sort()
+    print(peopleList)
+    x = len(peopleList)
+    print(f"There will be {x} invited people.")
